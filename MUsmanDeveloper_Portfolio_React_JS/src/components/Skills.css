@@ -1,0 +1,135 @@
+
+
+/****************************/
+/* START - Skills Section
+/***************************/
+
+.skills-section {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.skills-header {
+    width: 100%;
+    background-color: #f7f9fc;
+    margin: 20px 0px;
+    border: none;
+}
+
+.skills-header h2 {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.skills-content {
+    width: 100%;
+    height: auto;
+    background-color: #f7f9fc;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.skill {
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.skill:hover {
+    /*transform: translateY(-4px);*/
+    transform: scale(1.05);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-name {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+}
+
+.skill-percentage {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    float: right; /* Float percentage to the right */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+.skill-progress-bar {
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.skill-progress-fill {
+    height: 100%;
+    /* background-color: #6244C5; */
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    width: 0; /* Initially zero width */
+    transition: width 1.5s ease-in-out; /* Smooth transition animation */
+}
+
+/* Different filling colors for different skills Progress-bars */
+.first-skill-progress-bar .skill-progress-fill {
+    background-color: #6244C5; /* Purple */
+}
+
+.second-skill-progress-bar .skill-progress-fill {
+    background-color: #FFC448; /* Yellow */
+}
+
+.third-skill-progress-bar .skill-progress-fill {
+    background-color: #DC3545; /* Red */
+}
+
+.fourth-skill-progress-bar .skill-progress-fill {
+    background-color: #0dcaf0; /* Cyan */
+}
+
+.fifth-skill-progress-bar .skill-progress-fill {
+    background-color: #05bb66; /* Cyan */
+}
+
+
+
+
+/* Small Mobile devices (up to 320px) */
+/* Medium Mobile devices (321px to 375px) */
+/* Large Mobile devices (376px to 425px) */
+
+@media screen and (max-width: 425px) {
+
+}
+
+
+/* Small desktops (769px to 1024px) */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+
+
+/* Large desktops (1025px to 1440px) */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+

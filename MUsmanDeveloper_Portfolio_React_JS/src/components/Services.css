@@ -1,0 +1,257 @@
+
+
+
+/****************************/
+/* START - Services Section
+/***************************/
+
+.services-section {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.services-header {
+    width: 100%;
+    background-color: #f7f9fc;
+    margin: 20px 0px;
+    border: none;
+}
+
+.services-header h2 {
+    color: #000; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.services-content {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    background-color: #f7f9fc;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.services-list {
+    width: 100%;
+    height: auto;
+}
+
+.serv-tile-box {
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px 15px;
+    text-align: justify;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serv-tile-box:hover {
+    transform: translateY(-8px);
+    /*box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);*/
+    .serv-tile-box-avatar {
+        background-color: #000;
+    }
+    .serv-tile-box-title {
+        color: #1A76D1;
+    }
+}
+
+.serv-tile-box-avatar {
+    background-color: #1A76D1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.serv-tile-box-avatar .serv-icon {
+    color: #fff;
+}
+
+.serv-tile-box-title {
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.serv-tile-box-meta {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+/* Small Mobile devices (up to 320px) */
+/* Medium Mobile devices (321px to 375px) */
+/* Large Mobile devices (376px to 425px) */
+
+@media screen and (max-width: 425px) {
+
+    .services-section {
+        padding: 0 10px;
+    }
+    
+    .services-header h2 {
+        font-size: 24px;
+    }
+
+    .services-content {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .services-list {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .serv-tile-box {
+        width: calc(100%-20px);
+        margin: 0 10px;
+    }
+
+    .serv-tile-box-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .serv-tile-box-avatar i {
+        font-size: 24px;
+    }
+
+    .serv-tile-box-title {
+        font-size: 16px;
+    }
+
+    .serv-tile-box-meta {
+        font-size: 14px;
+    }  
+    
+}
+
+
+
+/* Small desktops (769px to 1024px) */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .services-section {
+        padding: 0px;
+    }
+    
+   .services-header h2 {
+        font-size: 32px;
+    }
+    
+    .services-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 30px; */
+    }
+    
+    .services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 75px;
+    }
+    
+    .serv-tile-box {
+        width: 220px;
+    }
+  
+    .serv-tile-box-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .serv-tile-box-avatar i {
+        font-size: 32px;
+    }
+    
+    .serv-tile-box-title {
+        font-size: 18px;
+    }
+  
+    .serv-tile-box-meta {
+        font-size: 16px;
+    }
+    
+}    
+
+
+
+/* Large desktops (1025px to 1440px) */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .services-section {
+        padding: 0px;
+    }
+    
+   .services-header h2 {
+        font-size: 32px;
+    }
+    
+    .services-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 30px; */
+    }
+    
+    .services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 75px;
+    }
+    
+    .serv-tile-box {
+        width: 220px;
+    }
+  
+    .serv-tile-box-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .serv-tile-box-avatar i {
+        font-size: 32px;
+    }
+    
+    .serv-tile-box-title {
+        font-size: 18px;
+    }
+  
+    .serv-tile-box-meta {
+        font-size: 16px;
+    }
+    
+}    
+
+

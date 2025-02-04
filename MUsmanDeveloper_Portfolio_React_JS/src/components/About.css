@@ -1,0 +1,385 @@
+
+
+
+/*************************/
+/* START - About Section
+/*************************/
+
+.about-section {
+    width: 100%;
+    background-color: #fff; 
+    margin-top: 50px;
+}
+
+.about-header {
+    width: 100%;
+    background-color: #f7f9fc;
+    margin: 20px 0px;
+    border: none;
+}
+
+.about-header h2 {
+    color: #000; 
+    font-weight: 600;
+    text-align: center;
+    margin: 0px 0px;
+}
+
+.about-content {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #f7f9fc;        
+}
+
+.personal-profile {
+    background-color: #fff;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personal-profile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.personal-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps the aspect ratio */
+}
+
+.profile-image-popup-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* background color when alert-box opened */
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-popup-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #ff6347;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.personal-bio-data {
+    width: 100%;
+    height: auto;
+}
+
+.key-point {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; /* Space between label and value */
+}
+
+.key-point span {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.key-point p {
+    text-align: left;
+}
+
+.description {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    /*transform: translateY(-8px);*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    .stats-value {
+      color: #000; 
+    }
+    .stats-name {
+      color: #007BFF; 
+    }
+}
+
+.stats-value {
+    color: #007BFF; 
+    transition: color 0.3s;
+}
+
+.stats-name {
+    color: #000; 
+    margin-top: 5px;
+}
+
+
+
+
+/* Small Mobile devices (up to 320px) */
+/* Medium Mobile devices (321px to 375px) */
+/* Large Mobile devices (376px to 425px) */
+
+
+@media screen and (max-width: 425px) {
+
+    .about-section {
+        padding: 0 10px;
+    }
+    
+    .about-header h2 {
+    font-size: 24px;
+    }
+
+    .about-content {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px; /* Space between the Personal-info , Description & Statistics Containers */
+    }
+
+    .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between the image container and bio-data container */
+    }
+
+    .personal-profile {
+    width: 220px;
+    height: 260px;
+    }
+
+    .personal-bio-data {
+    display: grid;
+    row-gap: 15px; /* Space between rows */
+    grid-template-columns: 1fr; /* One columns of key points per row */
+    justify-content: center;
+    }
+
+    .key-point {
+    margin: 0 10px;
+    }
+
+    .key-point span {
+    font-size: 14px;
+    }
+
+    .key-point p {
+    font-size: 14px;
+    }
+
+    .description {
+    font-size: 14px;
+    margin: 20px 10px;
+    }
+
+    .statistics {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    }
+
+    .card {
+    width: 260px;
+    height: 150px;
+    padding: 20px;
+    }
+
+    .stats-value {
+    font-size: 48px;
+    }
+
+    .stats-name {
+    font-size: 20px;
+    }
+        
+}
+
+
+/* Small desktops (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .about-section {
+        padding: 0px;
+    }
+
+    .about-header h2 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px; /* Space between the Personal-info , Description & Statistics Containers */
+    }
+
+    .personal-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px; /* Space between the image container and bio-data container */
+    }
+
+    .personal-profile {
+        width: 320px;
+        height: 280px;
+    }
+
+    .personal-bio-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of key points per row */
+        column-gap: 50px; /* Space between columns */
+        row-gap: 30px; /* Space between rows */
+    }
+
+    .key-point span {
+        font-size: 16px;
+    }
+
+    .key-point p {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin: 45px 0px;
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .card {
+        width: 300px;
+        height: 150px;
+        padding: 30px;
+    }
+
+    .stats-value {
+        font-size: 48px;
+    }
+
+    .stats-name {
+        font-size: 20px;
+    }
+
+}
+
+
+/* Large desktops (1025px to 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .about-section {
+        padding: 0px;
+    }
+
+    .about-header h2 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px; /* Space between the Personal-info , Description & Statistics Containers */
+    }
+
+    .personal-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px; /* Space between the image container and bio-data container */
+    }
+
+    .personal-profile {
+        width: 320px;
+        height: 280px;
+    }
+
+    .personal-bio-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of key points per row */
+        column-gap: 50px; /* Space between columns */
+        row-gap: 30px; /* Space between rows */
+    }
+
+    .key-point span {
+        font-size: 16px;
+    }
+
+    .key-point p {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin: 45px 0px;
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .card {
+        width: 300px;
+        height: 150px;
+        padding: 30px;
+    }
+
+    .stats-value {
+        font-size: 48px;
+    }
+
+    .stats-name {
+        font-size: 20px;
+    }    
+
+}
+
+
+
+
+

@@ -1,0 +1,337 @@
+
+
+
+
+/***************************/
+/* START - Footer Section
+/***************************/
+
+
+.footer-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+
+.footer-columns {
+    width: 100%;
+}
+
+.footer-column-1 h3, .footer-column-3 h3, .footer-column-2 h3 {
+    color: #000;
+    text-align: left;
+    margin: 20px 0px 30px;
+}
+
+.footer-column-1 .footer-about-content {
+    display: block;
+    /* In display:block case there is no gap property to give 25px space between each item */
+    /* So you need to use margin-bottom:25px with display:block child elements/tags/class */
+}
+
+.footer-column-1 .footer-about-content .footer-about-description {
+    color: #000;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 35px; /* Adds 20px space between each item */
+}
+
+.footer-column-1 .footer-about-content .footer-about-social-links {
+    margin-bottom: 0px; /* Adds 20px space between each item */
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-column-1 .footer-about-content .footer-about-social-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-column-1 .footer-about-content .footer-about-social-links li a:hover {
+    color: #007BFF;
+}
+
+.footer-column-2 .footer-pages-links {
+    list-style-type: none;
+    display: block;
+    /* In display:block case there is no gap property to give 25px space between each item */
+    /* So you need to use margin-bottom:25px with display:block child elements/tags/class */
+}
+
+.footer-column-2 .footer-pages-links li {
+    margin-bottom: 25px; /* Adds 20px space between each item */
+}
+
+.footer-column-2 .footer-pages-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-column-2 .footer-pages-links li a:hover {
+    color: #007BFF;
+}
+
+.footer-column-3 .footer-contact-details {
+    list-style-type: none;
+    display: block;
+    /* In display:block case there is no gap property to give 25px space between each item */
+    /* So you need to use margin-bottom:25px with display:block child elements/tags/class */
+}
+
+.footer-column-3 .footer-contact-details li {
+    margin-bottom: 25px; /* Adds 20px space between each item */
+}
+
+.footer-column-3 .footer-contact-details li div {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-column-3 .footer-contact-details li div:hover {
+    a span {
+        color: #007bff;
+    };
+    a p {
+        color: #007bff;
+    };
+}
+
+.footer-column-3 .footer-contact-details li div a {
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-column-3 .footer-contact-details li div a span {
+    color: #000;
+}
+
+.footer-column-3 .footer-contact-details li div a p {
+    color: #000;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.footer-copyright {
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-copyright a {
+    color: #1A76D1; 
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    color: #1A76D1; 
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Small Mobile devices (up to 320px) */
+/* Medium Mobile devices (321px to 375px) */
+/* Large Mobile devices (376px to 425px) */
+
+@media screen and (max-width: 425px) {
+
+    .footer-section {
+        padding: 0 10px 20px;
+    }
+    
+    .footer-columns {
+        padding: 0px 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .footer-column-1, .footer-column-2, .footer-column-3 {
+        width: 100%;
+    }
+    
+    .footer-column-1 h3, .footer-column-2 h3, .footer-column-3 h3 {
+        font-size: 18px;
+    }
+    
+    .footer-column-1 .footer-about-content .footer-about-description {
+        font-size: 14px;
+    }
+    
+    .footer-column-1 .footer-about-content .footer-about-social-links li a {
+        font-size: 18px;
+    }
+    
+    .footer-column-2 .footer-pages-links li a {
+        font-size: 14px;
+    }
+    
+    .footer-column-3 .footer-contact-details li div a p {
+        font-size: 14px;
+    }
+    
+    .footer-copyright {
+        padding: 20px 0px;
+    }
+    
+    .copyright-text {
+        font-size: 12px;
+    }
+    
+    .developer-text {
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+
+/* Small desktops (769px to 1024px) */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .footer-section {
+        padding: 0px 40px 20px;
+    }
+    
+    .footer-columns {
+        padding: 20px 40px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 80px;
+    }
+      
+      .footer-column-1 {
+        width: 35%;
+        margin: 0px;
+      }
+          
+      .footer-column-2 {
+        width: 30%;
+        margin: 0px;
+      }
+      
+      .footer-column-3 {
+        width: 35%;
+        margin: 0px;
+      }
+    
+      .footer-column-1 h3, .footer-column-2 h3, .footer-column-3 h3 {
+        font-size: 20px;
+      }
+    
+      .footer-column-1 .footer-about-content .footer-about-description {
+        font-size: 16px;
+      }
+    
+      .footer-column-1 .footer-about-content .footer-about-social-links li a {
+        font-size: 18px;
+      }
+      
+      .footer-column-2 .footer-pages-links li a {
+        font-size: 16px;
+      }
+    
+      .footer-column-3 .footer-contact-details li div a p {
+        font-size: 16px;
+      }
+    
+      .footer-copyright {
+        padding: 30px 0px 10px;
+      }
+    
+      .copyright-text {
+        font-size: 16px;
+      }
+    
+    .developer-text {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+/* Large desktops (1025px to 1440px) */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .footer-section {
+        padding: 0px 40px 20px;
+      }
+    
+    .footer-columns {
+        padding: 20px 40px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 80px;
+    }
+      
+    .footer-column-1 {
+        width: 35%;
+        margin: 0px;
+    }
+          
+    .footer-column-2 {
+        width: 30%;
+        margin: 0px;
+    }
+      
+    .footer-column-3 {
+        width: 35%;
+        margin: 0px;
+    }
+    
+    .footer-column-1 h3, .footer-column-2 h3, .footer-column-3 h3 {
+        font-size: 20px;
+    }
+    
+    .footer-column-1 .footer-about-content .footer-about-description {
+        font-size: 16px;
+    }
+    
+    .footer-column-1 .footer-about-content .footer-about-social-links li a {
+        font-size: 18px;
+    }
+      
+    .footer-column-2 .footer-pages-links li a {
+        font-size: 16px;
+    }
+    
+    .footer-column-3 .footer-contact-details li div a p {
+        font-size: 16px;
+    }
+    
+    .footer-copyright {
+        padding: 30px 0px 10px; /* Bcz from bottom 20px already given by footer-section  */
+    }
+    
+    .copyright-text {
+        font-size: 16px;
+    }
+    
+    .developer-text {
+        font-size: 14px;
+    }
+
+}
+
+
+
